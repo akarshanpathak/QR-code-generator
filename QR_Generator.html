@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="QR_Generator.css">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="leftSection">
+        <div class="headingInput">
+          <h1>QR Generator</h1>
+          <input
+            type="text"
+            id="input"
+            placeholder="Enter text to generate QR"
+          />
+          <button id="btn">Generate QR</button>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=asdf"
+          alt=""
+          id="img"
+        />
+      </div>
+      <p class="project-info">
+        This project allows you to generate QR codes based on the text input.
+        Give it a try now and create your own QR codes effortlessly.
+      </p>
+    </div>
+    <script src="QR_Generator.js"></script>
+  </body>
+</html>
